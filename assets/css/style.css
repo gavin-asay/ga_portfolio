@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     color: #2b6891;
     font-weight: normal;
 }
@@ -111,17 +111,36 @@ section > div {
 
 .grid-item {
     grid-area: span 1/span 1;
+    overflow: hidden;
+    width: 100%;
+    border: 6px solid #acbb9c;
+    box-sizing: border-box;
+    height: 1fr;
+    display: flex;
 }
 
 .grid-item img {
-    margin: 0;
-    box-sizing: border-box;
-    border: 6px solid #acbb9c;
     width: 100%;
-    height: 100%;
-    position: relative;
+    margin: 0;
 }
 
 .grid-item.emphasize {
     grid-area: span 2/span 2;
 }
+
+.grid-item div {
+    background-color: #acbb9c;
+    width: 100%;
+    margin: 0;
+}
+
+.grid-item h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.grid-item h4 {
+    font-size: 21px;
+    margin: 0;
+}
+
