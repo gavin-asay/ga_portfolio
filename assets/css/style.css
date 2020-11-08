@@ -3,21 +3,25 @@
     font-weight: lighter;
 }
 
+h1, h2 {
+    color: #2b6891;
+    font-weight: normal;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     padding: 15px;
-    background-color: gray;
+    background-color: #aaaaaa;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../images/IMG_1032.jpg");
+    background-size: cover;
 }
 
 header img {
     height: 300px;
-}
-
-h1, h2 {
-    color: blue;
+    border-radius: 35px;
 }
 
 p, address {
