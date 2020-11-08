@@ -66,6 +66,12 @@ header ul li {
     font-size: 30px;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
+    transition: background-color 0.4s;
+}
+
+header ul li:hover {
+    background: rgba(255, 255, 255, 1);
+    transition: background-color 0.4s;
 }
 
 .content-box {
@@ -89,7 +95,33 @@ section h2 {
     text-align: right;
 }
 
-section div {
+section > div {
     border-left: 5px solid #2b6891;
     padding-left: 15px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+}
+
+.grid-item {
+    grid-area: span 1/span 1;
+}
+
+.grid-item img {
+    margin: 0;
+    box-sizing: border-box;
+    border: 6px solid #acbb9c;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.grid-item.emphasize {
+    grid-area: span 2/span 2;
 }
