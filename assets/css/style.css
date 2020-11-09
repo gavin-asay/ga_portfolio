@@ -1,3 +1,5 @@
+/* Page-wide styles */
+
 * {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: lighter;
@@ -23,6 +25,8 @@ p, address, ul {
 p {
     margin: 0;
 }
+
+/* Header styles */
 
 header {
     padding: 15px;
@@ -79,6 +83,8 @@ header ul li a {
     text-decoration: none;
 }
 
+/* Sections layout */
+
 .content-box {
     width: 80%;
     margin: 0 auto;
@@ -100,6 +106,8 @@ section > div {
     border-left: 5px solid #2b6891;
     padding-left: 15px;
 }
+
+/* CSS grid */
 
 .portfolio-grid {
     display: grid;
@@ -153,6 +161,8 @@ section > div {
     transition: transform 0.5s
 }
 
+/* Contact me */
+
 address {
     border-left: 5px solid #2b6891;
     padding-left: 15px;
@@ -174,6 +184,8 @@ address ul li {
 .contact-link {
     width: 50px;
 }
+
+/* Media queries */
 
 @media screen and (max-width: 575px) {
     header div, .content-box {
