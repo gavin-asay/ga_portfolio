@@ -5,6 +5,7 @@ In this first iteration of my portfolio, I used flexbox and CSS grid functionali
 I look forward to creating a more robust portfolio page with finer details (the hover effect on individual grid items was a strange roadblock).
 
 https://gavin-asay.github.io/ga_portfolio/
+
 https://github.com/gavin-asay/ga_portfolio/tree/main
 
 ![Portfolio Preview](./assets/images/screenshot.jpg)
