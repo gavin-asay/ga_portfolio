@@ -115,6 +115,32 @@ section h2 {
 section > div {
     border-left: 5px solid #2b6891;
     padding-left: 15px;
+    flex-grow: 1;
+}
+
+/* skill section */
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-list div {
+    flex-basis: 33%;
+    padding: 10px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin: 0.166666667%;
+    background-color: azure;
+}
+
+.skill-list h3 {
+    text-align: center;
+    margin: 0 5px;
+}
+
+.skill-list ul {
+    margin: 0 auto;
 }
 
 /* CSS grid */
@@ -138,6 +164,7 @@ section > div {
 .grid-item img {
     width: 100%;
     margin: 0;
+    display: block;
 }
 
 .grid-item.emphasize {
@@ -220,7 +247,6 @@ address ul li {
         font-size: 15px;
         margin: 0;
         padding: 10px;
-        background: rgba(255, 255, 255, 1)
     }
 
     section {
@@ -237,7 +263,7 @@ address ul li {
     }
 
     .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         grid-gap: 15px;
     }
 
@@ -280,6 +306,11 @@ address ul li {
         min-width: 100px;
         max-width: 100px;
     }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        grid-gap: 15px;
+    }
     
     .grid-item div {
         transform: translate(0);
@@ -293,15 +324,29 @@ address ul li {
         font-size: 16px;
     }
 
-    header ul li {
-        background: rgba(255, 255, 255, 1)
-    }
-
     address ul {
         justify-content: space-evenly;
     }
 
     address ul li {
         display: block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-gap: 15px;
+    }
+
+    header div, .content-box {
+        width: 95%;
+    }
+}
+
+@media (hover: none) {
+    header ul li {
+        background: rgba(255, 255, 255, 1)
     }
 }
