@@ -126,12 +126,13 @@ section > div {
 }
 
 .skill-list div {
-    flex-basis: 33%;
+    flex-basis: 32.333333333%;
     padding: 10px;
     flex-grow: 1;
     box-sizing: border-box;
-    margin: 0.166666667%;
-    background-color: azure;
+    margin: 0.5%;
+    border: 1px dotted #2b6891;
+    border-radius: 15px;
 }
 
 .skill-list h3 {
