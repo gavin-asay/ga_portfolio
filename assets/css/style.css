@@ -5,6 +5,11 @@
     font-weight: lighter;
 }
 
+html {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     margin: 0;
 }
@@ -91,6 +96,7 @@ header ul li a {
 
 .content-box {
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -115,11 +121,8 @@ section > div {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
-    grid-auto-columns: auto;
-    grid-auto-rows: auto;
 }
 
 .grid-item {
@@ -176,13 +179,18 @@ address {
 address ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
 }
 
+address ul:first-child {
+    margin-bottom: 10px;
+}
+
 address ul li {
     padding: 10px 20px;
+    display: inline;
 }
 
 .contact-link {
@@ -229,7 +237,8 @@ address ul li {
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-gap: 15px;
     }
 
     .grid-item div {
@@ -249,8 +258,12 @@ address ul li {
     }
 
     address ul {
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 0;
+    }
+
+    address ul li {
+        display: block;
     }
 }
 
@@ -266,10 +279,6 @@ address ul li {
     section h2 {
         min-width: 100px;
         max-width: 100px;
-    }
-    
-    .portfolio-grid {
-        grid-template-columns: 1fr 1fr 1fr;
     }
     
     .grid-item div {
@@ -289,6 +298,10 @@ address ul li {
     }
 
     address ul {
-        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    address ul li {
+        display: block;
     }
 }
